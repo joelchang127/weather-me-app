@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@600&display=swap');
+    </style>
+</head>
+<body>
+  <h1>climate check-in app</h1>
+    <!-- <div>
+      <a href="/">
+        <input class="redirect-button" type="submit" value="Check-in page"/>
+      </a>
+    </div> -->
+
+    <div class="desc" id="hi">
+      <div class="weather-desc">
+        <p class="hidden">
+          The weather at <span id="city"></span> has <span id="description"></span>
+        </p>
+        <p class="hidden" id="second-line">
+          and feels like
+          <span id="temp"></span>&deg;.
+        </p>
+      </div>
+      <div class="aq-desc">
+        <p>
+          The AQI is <span id="aqi-val"></span> µg/m3, last read on: <span id="aqi-timestamp"></span>.
+        </p>
+      </div>
+    </div>
+    <button type="button" onClick=sendToServer() id="submit-name-button">check in</button>
+    <div>
+      <a href="/checkins" id="checkin-button">
+        <input class="redirect-button" type="submit" value="view checkins"/>
+      </a>
+    </div>
+</body>
+
+<script src="functions.js"></script>
+
+</html>

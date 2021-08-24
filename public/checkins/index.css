@@ -1,0 +1,26 @@
+/* .entry {
+  padding: 18px;
+  font-family: "Noto Sans JP";
+  font-size: 14px;
+}
+
+.redirect-button {
+  margin-top: 20px;
+  padding: 5px;
+  background-color: none;
+  border: none;
+  transition: all 0.3s ease; 
+  margin-top: 150px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.redirect-button:hover {
+  color: rgb(0, 0, 0, 0.6);
+} */
+
+
+#checkinMap {
+  width: 100vw;
+  height: 100vh;
+}
