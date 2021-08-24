@@ -3,6 +3,7 @@ const fetch = require("node-fetch")
 const Datastore = require("nedb");
 const app = express();
 var port = process.env.PORT || 8080;
+require('dotenv').config();
 
 // pass into Datastore() the location in my local device where the database will live
 // loadDatabase() loads what was in the previous database into memory
@@ -11,8 +12,8 @@ database.loadDatabase();
 
 app.use(express.json({limit: "1mb"}));
 
-app.listen(process.env.PORT || 8080, () => {
-    console.log(`Listening at port ${process.env.PORT || 8080}`);
+app.listen(port || 8080, () => {
+    console.log(`Listening at port ${port}`);
 })
 
 // choose the route where it will receive the post 
@@ -42,6 +43,7 @@ app.get("/weather/:lat/:lon", async (req, res) => {
   lat = req.params.lat;
   lon = req.params.lon;
   const api_key_weather = process.env.API_KEY_1;
+  console.log(api_key_weather);
   const weather_url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${api_key_weather}&units=imperial`
   const weather_response = await fetch(weather_url);
   const weather_data = await weather_response.json();

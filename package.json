@@ -11,6 +11,7 @@
   "author": "Joel Chang",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "nedb": "^1.8.0",
     "node-fetch": "^2.6.1"
