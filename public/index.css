@@ -25,7 +25,7 @@ h1 {
 }
 
 button {
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
   border-radius: 50%;
   border: none;
   background-color: rgb(255, 217, 0);
@@ -40,7 +40,7 @@ button {
 }
 
 button:hover {
-  background-color:rgb(255, 101, 81);
+  background-color:rgb(255, 252, 104);
 }
 
 

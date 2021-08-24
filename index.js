@@ -43,7 +43,6 @@ app.get("/weather/:lat/:lon", async (req, res) => {
   lat = req.params.lat;
   lon = req.params.lon;
   const api_key_weather = process.env.API_KEY_1;
-  console.log(api_key_weather);
   const weather_url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${api_key_weather}&units=imperial`
   const weather_response = await fetch(weather_url);
   const weather_data = await weather_response.json();
